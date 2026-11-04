@@ -4,7 +4,7 @@ A zero-config secondary clipboard for Windows. Runs silently in the background u
 
 ## Download
 
-👉 **[Click here to download DualCopy.exe](https://github.com/svelez1129/more-copies/releases/latest/download/DualCopy.exe)**
+👉 **[Click here to download DualCopy.exe](https://github.com/svelez1129/more-copies/releases/tag/v1.0.0)**
 
 ---
 
