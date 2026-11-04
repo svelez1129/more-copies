@@ -2,6 +2,12 @@
 
 A zero-config secondary clipboard for Windows. Runs silently in the background using 0% CPU.
 
+## Download
+
+👉 **[Click here to download DualCopy.exe](https://github.com/svelez1129/more-copies/releases/latest/download/DualCopy.exe)**
+
+---
+
 ## Shortcuts
 
 * `Ctrl` + `Shift` + `C` — Copy secondary
@@ -10,7 +16,7 @@ A zero-config secondary clipboard for Windows. Runs silently in the background u
 
 ## Install
 
-1. Download **`DualCopy.exe`**.
+1. Download `DualCopy.exe`.
 2. Double-click to run.
 
 Starts automatically on boot. No installer or admin rights needed.
