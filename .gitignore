@@ -1,0 +1,12 @@
+# Virtual environment
+venv/
+.venv/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# Python / Pytest caches
+__pycache__/
+.pytest_cache/
