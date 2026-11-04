@@ -1,0 +1,36 @@
+name: Build DualCopy Executable
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install keyboard pyperclip pytest pyinstaller
+
+    - name: Run Pytest
+      run: |
+        pytest
+
+    - name: Build Executable with PyInstaller
+      run: |
+        pyinstaller --noconsole --onefile dualcopy.py
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: DualCopy-Windows
+        path: dist/DualCopy.exe
